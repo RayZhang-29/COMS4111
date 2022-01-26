@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="post">
+        Please enter player name： <input  type="text" name="player_name"/>
+        <button type="submit">Go</button>
+         <br/>
+        The following are the retrieved results:<br/>
+        <ul>
+        {% for d1 in data1 %}
+          <li>
+              {{ d1 }}
+         </li>
+         {% endfor %}
+        </ul>
+    </form>
+
+
+</body>
+</html>

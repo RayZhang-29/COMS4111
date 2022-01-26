@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="post">
+        Please enter award name： <input  type="text" name="award_id"/>(such as PL_20,CC_20,LC_20)
+        <button type="submit">Go</button>
+        <br/>
+        The following are the retrieved results:<br/>
+        <ul>
+        {% for d2 in data2 %}
+          <li>
+              {{ d2 }}
+         </li>
+         {% endfor %}
+        </ul>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body{
+      font-size: 15pt;
+      font-family: arial;
+    }
+  </style>
+  <head>
+      <meta charset="UTF-8">
+      <title>England Premier League Clubs</title>
+  </head>
+
+
+<body>
+
+    <p>{{ clubs|length }} CLUBS</p>
+    <ul>
+        {% for club in clubs %}
+        <li>{{ club.club_name }} - Establish year:{{ club.establish_year }} - Average market value:{{ club.average_market_value }}million</li>
+        {% endfor %}
+    </ul>
+
+
+<p><a href="/search1">Go to the search page for player search!</a></p>
+<p><a href="/search2">Go to the search page for award search!</a></p>
+<p><a href="/search3">Go to the search page for coach search!</a></p>
+</body>
+</html>
